@@ -1,0 +1,26 @@
+{
+  "name": "aplicando-sass",
+  "version": "1.0.0",
+  "description": "commit=agregado de estiquetas meta {\r index// agregue keywords =\"conquerors blade, predatorian, predatorians, casa latina, conqueros blade español, server na\"\r     / agregue description =\"predatorians casa latina competitiva de conquerors blede en servidor na\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palumbo360/aplicando-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palumbo360/aplicando-sass/issues"
+  },
+  "homepage": "https://github.com/palumbo360/aplicando-sass#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {}
+}

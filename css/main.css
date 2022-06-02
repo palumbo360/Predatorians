@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+h1 {
+  text-transform: uppercase;
+  color: #a52a2a;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0px;
+  background-color: #354167; }
+
+.header img {
+  position: relative;
+  left: 20%;
+  top: 10%;
+  width: 60%; }
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.9s linear 0.5s both;
+  animation: scale-up-center 0.9s linear 0.5s both; }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+nav {
+  background-color: #354167; }
+  nav div {
+    background-color: #354167; }
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.9s linear 0.5s both;
+  animation: scale-up-center 0.9s linear 0.5s both; }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.menu ul {
+  background-color: #354167; }
+  .menu ul li {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: aliceblue; }
+    .menu ul li a {
+      color: black;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.slide-right {
+  -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+.card-video iframe, .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.principal p {
+  color: #9b93a1;
+  padding: 20px;
+  font-size: 26px; }
+
+body {
+  background-color: #1f1a1a; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  text-transform: uppercase;
+  color: #a52a2a;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 20px; }
+
+h3 {
+  text-transform: uppercase;
+  color: #a52a2a;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 5px; }
+
+.card-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+
+.cuatro a img {
+  position: relative;
+  width: 100%; }
+
+.card-text {
+  color: black;
+  font-size: 26px; }
+
+.card {
+  background-color: #8896a0; }
+
+.griddiscord {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 13px;
+  grid-row-gap: 6px; }
+
+.tables {
+  text-align: center; }
+  .tables table {
+    margin: 0 auto;
+    text-align: left;
+    background-color: #071d32;
+    color: #b5ccda;
+    font-style: italic;
+    margin-bottom: 50px; }
+
+.row {
+  margin-right: calc(0 * var(--bs-gutter-x)); }
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+  .video iframe {
+    padding: 25px; }
+
+@keyframes discord {
+  0% {
+    height: 70px;
+    width: 250px; }
+  100% {
+    height: 500px;
+    width: 350px; } }
+
+@keyframes discord-c {
+  0% {
+    height: 500px;
+    width: 350px; }
+  100% {
+    height: 70px;
+    width: 250px; } }
+
+.discord {
+  animation-name: discord-c;
+  animation-duration: 2s;
+  animation-play-state: pause;
+  float: left;
+  height: 70px;
+  width: 250px; }
+
+.discord:hover {
+  height: 500px;
+  width: 350px;
+  float: left;
+  animation-name: discord;
+  animation-duration: 2s;
+  animation-play-state: pause; }
+
+ol {
+  text-align: center; }
+  ol li {
+    text-align: center;
+    color: aliceblue;
+    list-style-type: none; }
+
+.final {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px; }
+  .final .f1 img {
+    width: 50%; }
+  .final .f2 p {
+    color: #9b93a1; }
+
+@media (min-width: 768px) {
+  .header img {
+    position: relative;
+    left: 30%;
+    top: 10%;
+    width: 35%; } }
+
+@media (min-width: 1000px) {
+  .header {
+    background-image: url(../img/header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    background-color: black; }
+    .header img {
+      position: relative;
+      left: 2%;
+      top: 10%;
+      width: 25%; }
+  .flip-scale-up-hor {
+    -webkit-animation: flip-scale-up-hor 0.9s steps(2, end) backwards;
+    animation: flip-scale-up-hor 0.9s steps(2, end) backwards; }
+  @-webkit-keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+      transform: scale(1) rotateX(0); }
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-90deg);
+      transform: scale(2.5) rotateX(-90deg); }
+    100% {
+      -webkit-transform: scale(1) rotateX(-180deg);
+      transform: scale(1) rotateX(-180deg); } }
+  @keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+      transform: scale(1) rotateX(0); }
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-90deg);
+      transform: scale(2.5) rotateX(-90deg); }
+    100% {
+      -webkit-transform: scale(1) rotateX(-180deg);
+      transform: scale(1) rotateX(-180deg); } } }
+
+@media (min-width: 550px) {
+  .menu ul li {
+    padding: 10px 15px;
+    list-style-type: none; }
+  .final {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    align-items: end; }
+  .griddiscord {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 13px;
+    grid-row-gap: 6px; } }

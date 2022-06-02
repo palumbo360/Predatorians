@@ -1,0 +1,38 @@
+h1 {
+  @include titulos (uppercase, $titles-color,bold,center,20px 0px);
+    background-color: rgb(53, 65, 103);
+ 
+}
+
+.header{
+    img {
+        position: relative;
+        left: 20%;
+        top: 10%;
+        width: 60%;
+    }
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.9s linear 0.5s both;
+	        animation: scale-up-center 0.9s linear 0.5s both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+} 

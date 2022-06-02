@@ -1,0 +1,24 @@
+$titles-color:#a52a2a;
+
+@mixin titulos ($text, $color, $font, $align, $padding) {
+    text-transform: $text;
+    color: $color;
+    font-weight: $font;
+    text-align: $align;
+    padding: $padding;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@import "header";
+@import "nav";
+@import "principal";
+@import "footer";
+@import "responsive";
