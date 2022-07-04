@@ -1,5 +1,30 @@
 
 
+class usuario{
+  constructor(nombre, contrasena, dinero){
+    this.nombre = nombre;
+    this.contrasena = contrasena;
+    this.dinero = dinero;
+  }
+}
+
+function agregarUsuario(){
+  let numeroUsuario = parseInt(prompt("cuantos usuarios vas a ingresar"))
+  let usuarios = []
+
+  for (let index = 0; index < numeroItem; index++){
+    let nombre = prompt("ingrese nombre de usuario")
+    let contrasena = prompt("ingrese contaseña")
+    let dinero = parseInt(prompt("ingrese cantidad de soberanos"))
+
+
+    let usuarioAIngresar= new usuario(nombre, contrasena, dinero)
+    usuarios.push(usuarioAIngresar)
+  }
+  console.log(usuarios)
+}
+
+
 class item{
     constructor(nombre, tipo, precio, temporada, Pj) {
     this.nombre = nombre;
@@ -32,6 +57,7 @@ function agregarItem(){
 }
 
 function main(){
+  agregarUsuario()
   agregarItem()
 }
 
