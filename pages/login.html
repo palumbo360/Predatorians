@@ -12,7 +12,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="shortcut icon" href="../img/faviconV2.png" type="image/x-icon">
-  <title>Predatorians|Tienda</title>
+  <title>Predatorians|Login</title>
 </head>
 
 <body>
@@ -58,69 +58,71 @@
               </li>
             </ul>
             <form class="d-flex m-2">
-              <a href="../pages/login.html"><button type="button" class="btn btn-danger">Creador de objetos</button></a>
+              <button type="button" class="btn btn-danger">Creador de objetos</button>
             </form>
           </div>
         </div>
       </nav>
     </div>
-    <h3>Skins de temporadas</h3>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card m-2">
-          <img src="../img/season-1.jfif" class="card-img-top" alt="Skins de la primera temporada">
-          <div class="card-body">
-            <h5 class="card-title">Season 1</h5>
-            <button type="button" class="btn btn-danger">Comprar</button>
-          </div>
+    <form id="fomulario1">
+      <div id="login-form" class="container-md">
+        <h2>crear Usuario</h2>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="Inputusuario">
         </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="InputPassword">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">dinero</label>
+          <input type="number" class="form-control" id="Inputdinero">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
-      <div class="col">
-        <div class="card m-2">
-          <img src="../img/season-2.webp" class="card-img-top" alt="Skins de la segunda temporada">
-          <div class="card-body">
-            <h5 class="card-title">Season 2</h5>
-            <button type="button" class="btn btn-danger">Comprar</button>
-          </div>
+    </form>
+    <form id="fomulario2">
+      <div id="login-form" class="container-md">
+        <h2>Crear item</h2>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="Inputnombre">
         </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Tipo de objeto</label>
+          <input type="text" class="form-control" id="Inputtipo">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Precio</label>
+          <input type="number" class="form-control" id="Inputprecio">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Numero de temporada</label>
+          <input type="number" class="form-control" id="Inputtemporada">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
-      <div class="col">
-        <div class="card m-2">
-          <img src="../img/season-3.jfif" class="card-img-top" alt="Skins de la tecera temporada">
-          <div class="card-body">
-            <h5 class="card-title">Season 3</h5>
-            <button type="button" class="btn btn-danger">Comprar</button>
-          </div>
-        </div>
+    </form>
+  </div>
+  <footer>
+    <div class="final">
+      <div class="f1">
+        <img src="../img/logo-fotter.png" alt="logo del juego">
       </div>
-      <div class="col">
-        <div class="card m-2">
-          <img src="../img/season-4.jpg" class="card-img-top" alt="Skins de la cuarta temporada">
-          <div class="card-body">
-            <h5 class="card-title">Season 4</h5>
-            <button type="button" class="btn btn-danger">Comprar</button>
-          </div>
-        </div>
+      <div class="f2">
+        <p>Copyright 2019</p>
+        <p><a href="https://comunica-web.com/blog/marketing-digital/ley-cookies-2/">Ley de Cookies</a></p>
+        <p>Esta es nuestra dirección de contacto</p>
+        <p>Síguenos en <a href="https://www.facebook.com/">Facebook</a></p>
       </div>
     </div>
-    <footer>
-      <div class="final">
-        <div class="f1">
-          <img src="../img/logo-fotter.png" alt="logo del juego">
-        </div>
-        <div class="f2">
-          <p>Copyright 2019</p>
-          <p><a href="https://comunica-web.com/blog/marketing-digital/ley-cookies-2/">Ley de Cookies</a></p>
-          <p>Esta es nuestra dirección de contacto</p>
-          <p>Síguenos en <a href="https://www.facebook.com/">Facebook</a></p>
-        </div>
-      </div>
-    </footer>
+  </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-    <script src="/man.js"></script>
+  <script src="/man.js"></script>
 </body>
 
 </html>

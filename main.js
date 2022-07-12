@@ -1,5 +1,5 @@
 
-
+/*
 class usuario{
   constructor(nombre, contrasena, dinero){
     this.nombre = nombre;
@@ -61,4 +61,4 @@ function main(){
   agregarItem()
 }
 
-main()
+main()*/

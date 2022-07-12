@@ -18,6 +18,17 @@ h1 {
   top: 10%;
   width: 60%; }
 
+  #login-form {
+  max-width: 40%;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  color: aliceblue;
+  background-image: url(/img/login.jfif);
+  background-repeat: no-repeat;
+  background-position: 230px  30px;
+}
+
+
 .scale-up-center {
   -webkit-animation: scale-up-center 0.9s linear 0.5s both;
   animation: scale-up-center 0.9s linear 0.5s both; }
