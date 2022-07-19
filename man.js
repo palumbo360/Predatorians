@@ -1,9 +1,16 @@
 
 
-let fomulario1 = document.getElementById("fomulario1")
+
+
+
+
+
+let registroUsuario = document.getElementById("registroUsuario")
 let usuario = document.getElementById("Inputusuario")
 let Password = document.getElementById("InputPassword")
 let dinero = document.getElementById("Inputdinero")
+
+
 
 let usuarios = []
 
@@ -11,28 +18,39 @@ class Usuarios {
   constructor(usuario, Password, dinero) {
     this.usuario = usuario.toUpperCase()
     this.Password = Password
-    this.dinero = dinero
+    this.dinero = parseInt(dinero)
   }
 }
 
-fomulario1.onsubmit = (event) => validarFormulario(event)
+registroUsuario.onsubmit = (event) => validarAdmin(event)
 
+  function validarAdmin(event) {
+    event.preventDefault()
+    let usuario = Inputusuario.value
 
-function validarFormulario(event) {
-  event.preventDefault()
-  let usuario = Inputusuario.value
+    if (usuario === "admin")
+    window.location.replace("http://127.0.0.1:5500/pages/admin.html");
+    
   let Password = InputPassword.value
   let dinero = Inputdinero.value
 
   let cuenta = new Usuarios(usuario, Password, dinero)
   usuarios.push(cuenta)
   console.log(usuarios)
-  fomulario1.reset()
-}
+  registroUsuario.reset()
+  localStorage.setItem("cuentaslocal", JSON.stringify(usuarios))
+ 
+  }
+
+  function listarUsuarios() {
+    let cuentaslista = localStorage.getItem("cuentaslocal");
+    if (cuentaslista !== null) {
+      usuarios = JSON.parse(cuentaslista);
+    }
+  }
 
 
-
-let formulario2 = document.getElementById("formulario2")
+let registroItem = document.getElementById("registroItem")
 let nombre = document.getElementById("Inputnombre")
 let tipo = document.getElementById("Inputtipo")
 let precio = document.getElementById("Inputprecio")
@@ -44,15 +62,15 @@ class Producto {
   constructor(nombre, tipo, precio, temporada,) {
     this.nombre = nombre.toUpperCase()
     this.tipo = tipo
-    this.precio = precio
+    this.precio = parseInt(precio)
     this.temporada = temporada
   }
 }
 
-fomulario2.onsubmit = (event) => validarFormulario2(event)
+registroItem.onsubmit = (event) => validarItem(event)
 
 
-function validarFormulario2(event) {
+function validarItem(event) {
   event.preventDefault()
   let nombre = Inputnombre.value
   let tipo = Inputtipo.value
@@ -63,6 +81,14 @@ function validarFormulario2(event) {
   let producto = new Producto(nombre, tipo, precio, temporada)
   productos.push(producto)
   console.log(productos)
-  formulario2.reset()
+  registroItem.reset()
+  localStorage.setItem("itemslocal", JSON.stringify(productos))
 }
 
+
+function listarItems() {
+  let item = localStorage.getItem("itenslocal");
+  if (item !== null) {
+    productos = JSON.parse(item);
+  }
+}
